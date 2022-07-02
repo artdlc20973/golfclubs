@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Golf Club Interactive</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+		<style type="text/css">
+			
+			/* CLIENT-SPECIFIC STYLES */
+			body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+			table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+			img { -ms-interpolation-mode: bicubic; }
+			
+			/* RESET STYLES */
+			img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+			table { border-collapse: collapse !important; }
+			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+			
+			/* iOS BLUE LINKS */
+			a[x-apple-data-detectors] {
+			    color: inherit !important;
+			    text-decoration: none !important;
+			    font-size: inherit !important;
+			    font-family: inherit !important;
+			    font-weight: inherit !important;
+			    line-height: inherit !important;
+			}
+			
+			/* GMAIL BLUE LINKS */
+			u + #body a {
+			    color: inherit;
+			    text-decoration: none;
+			    font-size: inherit;
+			    font-family: inherit;
+			    font-weight: inherit;
+			    line-height: inherit;
+			}
+			
+			/* SAMSUNG MAIL BLUE LINKS */
+			#MessageViewBody a {
+			    color: inherit;
+			    text-decoration: none;
+			    font-size: inherit;
+			    font-family: inherit;
+			    font-weight: inherit;
+			    line-height: inherit;
+			}
+
+			/* Universal styles for links and stuff */
+			a { color: #254086; font-weight: bold;transition: all .5s ease-in; }
+			a:hover { color: #ff0000; text-decoration: none; }
+			a.button:hover { background-color: #ff0000 !important; border: 1px solid #ff0000 !important; transform: translateY(7px); }
+
+			/* Responsive styles */
+			@media screen and (max-width: 600px) {
+				h1 { font-size: 22px !important; }
+				.mobile { max-width: 100% !important; width: 100% !important; }
+        .block { display: block!important;width: 100% !important;}
+			}
+
+      /* Interactive Elements */
+      /* El1- hide inputs (radio) */
+      input { display: none; }
+      /* El2- make labels look clickable */
+      label { cursor: pointer; transition: all .5s ease-in; }
+      label:hover { background: blue; color: #ffffff; }
+      /* El3- hide slides */
+      .slide { display: none; }
+      /* El4- show the checked slides */
+      #slide1:checked ~ .slide1,
+      #slide2:checked ~ .slide2,
+      #slide3:checked ~ .slide3,
+      #slide4:checked ~ .slide4,
+      #slide5:checked ~ .slide5 {
+        display: block;
+      }
+
+
+      /* CSS Animations */
+      @keyframes fade-in {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .fade1 { animation: 1s 1 fade-in; }
+      .fade2 { animation: 2s 1 fade-in; }
+
+
+		</style>
+	</head>
+	<body id="body" style="margin: 0 !important; padding: 0 !important;background: #f0f0f0;">
+
+  <!-- Preview text for the inbox -->
+  <div style="display: none;max-height: 0;overflow: hidden;">
+    This will be displayed under the subject line. Use wisely.
+  </div>  
+
+  <!--[if (gte mso 9)|(IE)]>
+  <table cellspacing="0" cellpadding="0" border="0" width="600" align="center" role="presentation"><tr><td>
+  <![endif]-->
+
+    <table border="0" cellpadding="0" class="mobile" cellspacing="0" role="presentation" width="100%"> 
+      <tr>
+        <td align="center">
+          <table  border="0" cellpadding="0" class="mobile" cellspacing="0" role="presentation" width="600"  style="background-color: #ffffff;color: #000000;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 18px;line-height: 28px;margin: 0; padding: 0;">
+            <!-- logo -->
+            <tr>
+              <td class="fade1" align="center" style="padding: 20px;">
+                <a href="https://www.artcodes2.dev" target="_blank"><img style="height: 75px;border-radius: 3px;display: block;margin: 0 auto;" src="https://i.ibb.co/pKC1cq3/artcodes2-04.png" alt="art codes 2 logo"></a> 
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #ff0000;padding:20px;">
+            <!-- headline -->
+                <h1 style="margin: 40px 0;text-align: center;font-family: 'Raleway',sans-serif;letter-spacing: 1px;font-weight:bold;">4th of July Iron Sets 15% Off</h1>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 20px;">
+                <!-- hero image -->
+                <a href="https://en.wikipedia.org/wiki/Iron_(golf)" target="_blank"><img class="fade2" style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;" src="https://i.ibb.co/xj8tNGN/clubslogo.png  " alt="golf iron sets logo"></a> 
+              </td>
+            </tr>
+          
+            <tr>
+              <td style="text-align: center;">
+                <!-- triggers for switching content -->
+                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="slides" id="slide3">
+                <input type="radio" name="slides" id="slide4">
+                <input type="radio" name="slides" id="slide5">
+
+                
+                  <!-- Curry Flow 9 Shoes -->
+                <div  class="slide slide1">
+                  <img style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;height: 100%;" src="https://i.ibb.co/D7qVLXv/clubcallaway.png" alt="7 iron callaway golf club">
+                </div>
+                <div class="slide slide2">
+                  <img  style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;height: 100%;" src="https://i.ibb.co/HGpffWH/clubcobra.png" alt="7 iron cobra golf club">
+                </div>
+                <div class="slide slide3">
+                  <img  style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;height: 100%;" src="https://i.ibb.co/RhXt1N5/clubmizuno.png" alt="7 iron mizuno golf club">
+                </div>
+                <div class="slide slide4">
+                  <img  style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;height: 100%;" src="https://i.ibb.co/Ld5VCw4/clubtaylormade.png" alt="7 iron taylor made golf club">
+                </div>
+                <div class="slide slide5">
+                  <img  style="max-width: 100%;min-width: 100px;width: 100%;border: 0;display: block;margin: 0 auto;height: 100%;" src="https://i.ibb.co/m8JG3xs/clubtitleist.png" alt="7 iron titleist golf club">
+                </div>
+                
+                <label for="slide1" class="slide-label" style="border: 1px solid black;display: inline-block;margin: 8px;padding: 4px 15px;font-size: 13px;border-radius: 5px;">Callaway</label>
+
+                <label for="slide2" class="slide-label" style="border: 1px solid black;display: inline-block;margin: 8px;padding: 4px 15px;font-size: 13px;border-radius: 5px;">Cobra</label>
+
+                <label for="slide3" class="slide-label" style="border: 1px solid black;display: inline-block;margin: 8px;padding: 4px 15px;font-size: 13px;border-radius: 5px;">Mizuno</label>
+
+                <label for="slide4" class="slide-label" style="border: 1px solid black;display: inline-block;margin: 8px;padding: 4px 13px;font-size: 13px;border-radius: 5px;">Taylor Made</label>
+
+                <label for="slide5" class="slide-label" style="border: 1px solid black;display: inline-block;margin: 8px;padding: 4px 15px;font-size: 13px;border-radius: 5px;">Titleist</label>
+              </td>
+            </tr>
+            <!-- two columns -->
+            <tr>
+              <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                  <tr>
+                    <td>
+                      <!-- left column -->
+                      <table class="block" align="left" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation">
+                        <tr>
+                          <td style="padding: 20;line-height: 24px;">
+                            <h2 style="font-size: 16px;margin: 20px 10px;">Types of Irons</h2>
+                            <p style="font-size: 14px;margin: 20px 10px;">An iron is a type of club used in the sport of golf to propel the ball towards the hole. Irons typically have shorter shafts and smaller clubheads than woods, the head is made of solid iron or steel, and the head's primary feature is a large, flat, angled face, usually scored with grooves. Irons are used in a wide variety of situations, typically from the teeing ground on shorter holes, from the fairway or rough as the player approaches the green, and to extract the ball from hazards, such as bunkers or even shallow water hazards.</p>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- right column -->
+                      <table class="block" align="right" border="0" cellpadding="0" cellspacing="0" width="48%" role="presentation">
+                        <tr>
+                          <td style="padding: 20;line-height: 24px;">
+                            <h2 style="font-size: 16px;margin: 20px 10px;">Numbered Irons</h2>
+                            <p style="font-size: 14px;margin:20px 10px;padding-bottom: 30px;">Irons are the most common type of club; a standard set of 14 golf clubs will usually contain between 7 and 11 irons, including wedges. Irons are customarily differentiated by a number from 1 to 10 (most commonly 3 to 9) that indicates the relative angle of loft on the clubface, although a set of irons will also vary in clubhead size, shaft length, and hence lie angle as the loft (and number) increase. Irons with higher loft than the numbered irons are called wedges, which are typically marked with a letter indicating their name, and are used for a variety of "utility" shots requiring short distances or high launch angles.</p>
+                          </td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+                    </td>  
+                  </tr>
+                </table> 
+              <tr>
+            <td>
+                <!-- button -->
+                <div style="text-align: center;"><!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://en.wikipedia.org/wiki/Iron_(golf)" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#254086" fillcolor="#254086">
+                <w:anchorlock/>
+                <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">GET ME A CAB!</center>
+                </v:roundrect>
+                <![endif]--><a class="button" href="https://en.wikipedia.org/wiki/Iron_(golf)"
+                style="background-color:#254086;border:1px solid #254086;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing: 1px;word-spacing: 2px;" target="_blank">Learn More</a></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #b1b1b1;line-height: 28px;font-size: 12px;font-family: verdana, sans-serif;max-width: 600px;margin: 0 auto;text-align: center;">
+                <!-- footer -->
+                  <p style="margin: 60px 0 20px 0;padding: 20px;">You have received this email because you enjoy the sport of golf and getting discounts. Good for you! <a href="https://www.example.com" target="_blank">Feel free to unsubscribe here. </a></p>
+                  <p style="margin: 0 0 30px 0;">123 Golf World St, Golf Galaxy, Planet USA 98765</p>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+      <!--[if (gte mso 9)| (IE)]>
+      </td></tr></table>
+      <![endif]-->
+
+	</body>
+</html>
